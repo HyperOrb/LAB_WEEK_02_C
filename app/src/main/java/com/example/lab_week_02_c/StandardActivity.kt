@@ -22,7 +22,7 @@ class StandardActivity : AppCompatActivity() {
         }
     }
 
-    override fun onNewIntent(intent: Intent?) {
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         Log.d(DEBUG, "StandardActivity: onNewIntent")
     }

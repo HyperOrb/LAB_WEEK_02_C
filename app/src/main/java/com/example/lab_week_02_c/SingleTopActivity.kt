@@ -21,7 +21,9 @@ class SingleTopActivity : AppCompatActivity() {
             )
         }
     }
-    override fun onNewIntent(intent: Intent?) {
+
+    // The fix is here: Changed from Intent? to Intent
+    override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent)
         Log.d(DEBUG, "SingleTopActivity: onNewIntent")
     }
